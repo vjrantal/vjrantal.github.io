@@ -19,15 +19,25 @@ description: > # this means to ignore newlines until "baseurl:"
   Random stuff from a software engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: vjrantal
-github_username: vjrantal
-disqus:
-  shortname: vjrantal-blog
+
+repository: vjrantal/vjrantal.github.io
+
 permalink: /:year/:month/:day/:title/
 
+twitter_username: vjrantal
+github_username: vjrantal
+
+disqus:
+  shortname: vjrantal-blog
+
+google_analytics: UA-85971931-1
+
 # Build settings
-markdown: kramdown
 theme: minima
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 gems:
   - jekyll-feed
 exclude:
