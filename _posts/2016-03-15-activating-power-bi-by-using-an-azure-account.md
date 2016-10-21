@@ -10,6 +10,8 @@ categories:
   - Azure
   - IoT
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A1voWutndbM" frameborder="0" allowfullscreen></iframe>
+
 The beef of this blog post is the video screencast above that shows three things:
 
   1. Creating an Azure account (starting at 0:00)

@@ -18,7 +18,7 @@ In this blog post, I&#8217;ll show how one can execute the automated tests of an
 
 To give an idea what the end result could look like, here is a short video of running the [Ionic Framework&#8217;s](http://ionicframework.com/) tests:
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/juU2GHyCOJc" frameborder="0" allowfullscreen></iframe>
 
 There are many different testing frameworks out there for various types of tests, but under the hood, they often rely on the [WebDriver](http://docs.seleniumhq.org/projects/webdriver/) API for actually controlling or &#8220;driving&#8221; the Web browser. The API abstracts the differences between various browser implementations and by implementing a browser-specific driver, one can get an arbitrary browser hooked into this ecosystem of WebDriver-based testing frameworks.
 
@@ -34,7 +34,7 @@ In this blog post, I&#8217;ll concentrate on the [latter](http://winphonewebdriv
   2. **Open the installed app and take a note of the IP address the device has** like shown in the picture below:
 
 <div id="attachment_58" style="width: 930px" class="wp-caption alignnone">
-  <a href="http://blog.vjrantal.net/wp-content/uploads/2015/02/windows-phone-driver.png"><img class="size-full wp-image-58" alt="Driver settings" src="http://blog.vjrantal.net/wp-content/uploads/2015/02/windows-phone-driver.png" width="920" height="700" /></a>
+  <a href="{{site.baseurl}}/images/uploads/2015/02/windows-phone-driver.png"><img class="size-full wp-image-58" alt="Driver settings" src="{{site.baseurl}}/images/uploads/2015/02/windows-phone-driver.png" width="920" height="700" /></a>
   
   <p class="wp-caption-text">
     Driver settings

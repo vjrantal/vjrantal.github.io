@@ -29,19 +29,19 @@ The Windows IoT Core device needs to have Wifi hardware. On devices like Raspber
 
 After flashing and powering on a device, such as a Raspberry Pi 2, the tool should show the device in the &#8220;My devices&#8221;-tab. The name of the devices initially comes from the Wifi access point name that the device &#8220;advertise&#8221; for onboarding.
 
-<a href="http://localhost/wordpress/wp-content/uploads/2016/03/1-starting-point.png" rel="attachment wp-att-133"><img class="alignnone size-full wp-image-133" src="http://localhost/wordpress/wp-content/uploads/2016/03/1-starting-point.png" alt="1-starting-point" width="1510" height="701" /></a>
+<a href="{{site.baseurl}}/images//uploads/2016/03/1-starting-point.png" rel="attachment wp-att-133"><img class="alignnone size-full wp-image-133" src="{{site.baseurl}}/images//uploads/2016/03/1-starting-point.png" alt="1-starting-point" /></a>
 
 ## 2. Start configuring the device
 
 The device configuration is started by clicking the &#8220;Configure device&#8221;-link. There will be a note like below that informs that you will lose your internet connectivity on the host machine while the onboarding is happening (unless you have internet connectivity via a cable). This is because your host machine needs to temporarily connect directly to the IoT Core device to pass the right setup information.
 
-<a href="http://localhost/wordpress/wp-content/uploads/2016/03/2-configure-device.png" rel="attachment wp-att-134"><img class="alignnone size-full wp-image-134" src="http://localhost/wordpress/wp-content/uploads/2016/03/2-configure-device.png" alt="2-configure-device" width="1255" height="731" /></a>
+<a href="{{site.baseurl}}/images//uploads/2016/03/2-configure-device.png" rel="attachment wp-att-134"><img class="alignnone size-full wp-image-134" src="{{site.baseurl}}/images//uploads/2016/03/2-configure-device.png" alt="2-configure-device" /></a>
 
 ## 3. Setup Wifi
 
 After your host machine is connected to the IoT Core device, you should see a list of access points that the IoT Core device has access to. Select the one you want (typically the one you will connect also with your host machine).
 
-<a href="http://localhost/wordpress/wp-content/uploads/2016/03/3-setup-wifi.png" rel="attachment wp-att-135"><img class="alignnone size-full wp-image-135" src="http://localhost/wordpress/wp-content/uploads/2016/03/3-setup-wifi.png" alt="3-setup-wifi" width="1259" height="737" /></a>
+<a href="{{site.baseurl}}/images//uploads/2016/03/3-setup-wifi.png" rel="attachment wp-att-135"><img class="alignnone size-full wp-image-135" src="{{site.baseurl}}/images//uploads/2016/03/3-setup-wifi.png" alt="3-setup-wifi" /></a>
 
 ## 4. Access the device via the configured Wifi
 
@@ -51,7 +51,7 @@ If you host machine is also connected to the same network and the network allows
 
 &nbsp;
 
-<a href="http://localhost/wordpress/wp-content/uploads/2016/03/5-end-result.png" rel="attachment wp-att-137"><img class="alignnone size-full wp-image-137" src="http://localhost/wordpress/wp-content/uploads/2016/03/5-end-result.png" alt="5-end-result" width="1226" height="741" /></a>
+<a href="{{site.baseurl}}/images//uploads/2016/03/5-end-result.png" rel="attachment wp-att-137"><img class="alignnone size-full wp-image-137" src="{{site.baseurl}}/images//uploads/2016/03/5-end-result.png" alt="5-end-result" /></a>
 
 If the IoT Core device doesn&#8217;t appear in the list, you could try rebooting it. The Wifi access point settings are persisted between reboots so there is a good chance that after the reboot, the device gets connected to the right network.
 

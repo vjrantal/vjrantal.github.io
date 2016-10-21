@@ -18,7 +18,7 @@ When I had a case like this, I setup an HTTP proxy in between the origin of the 
 
 As the proxy, I run Charles on my Mac and used the [rewrite tool](http://www.charlesproxy.com/documentation/tools/rewrite/) to modify the responses. The rule I had in place looked like this:
 
-[<img class="alignnone size-full wp-image-17" alt="Weinre rewrite rule" src="http://blog.vjrantal.net/wp-content/uploads/2014/11/Screen-Shot-2014-11-13-at-15.51.15.png" width="846" height="554" />](http://blog.vjrantal.net/wp-content/uploads/2014/11/Screen-Shot-2014-11-13-at-15.51.15.png)
+[<img class="alignnone size-full wp-image-17" alt="Weinre rewrite rule" src="{{site.baseurl}}/images/uploads/2014/11/Screen-Shot-2014-11-13-at-15.51.15.png" />]({{site.baseurl}}/images/uploads/2014/11/Screen-Shot-2014-11-13-at-15.51.15.png)
 
 Another alternative for the proxy is Fiddler, which also seems to have similar [capability in place](http://docs.telerik.com/fiddler/KnowledgeBase/FiddlerScript/ModifyRequestOrResponse).
 
