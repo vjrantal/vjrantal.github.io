@@ -2,7 +2,7 @@
 id: 32
 title: Experiences with Ionic on Windows Phone 8.1
 date: 2015-01-08T11:57:23+00:00
-author: vjrantal
+author: Ville Rantala
 layout: post
 dsq_thread_id:
   - 3512372758

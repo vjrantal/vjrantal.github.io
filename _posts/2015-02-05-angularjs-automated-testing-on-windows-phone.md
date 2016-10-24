@@ -2,7 +2,7 @@
 id: 49
 title: AngularJS automated testing on Windows Phone
 date: 2015-02-05T14:24:27+00:00
-author: vjrantal
+author: Ville Rantala
 layout: post
 dsq_thread_id:
   - 3512353140

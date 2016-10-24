@@ -2,7 +2,7 @@
 id: 21
 title: Connecting to a server running on Windows Phone 8.1 emulator
 date: 2014-11-14T13:07:25+00:00
-author: vjrantal
+author: Ville Rantala
 layout: post
 dsq_thread_id:
   - 3521383533

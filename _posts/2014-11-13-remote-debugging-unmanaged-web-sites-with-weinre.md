@@ -2,7 +2,7 @@
 id: 11
 title: Remote debugging unmanaged Web sites with weinre
 date: 2014-11-13T16:02:20+00:00
-author: vjrantal
+author: Ville Rantala
 layout: post
 dsq_thread_id:
   - 3512354598

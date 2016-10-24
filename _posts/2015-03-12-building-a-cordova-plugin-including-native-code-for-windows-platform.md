@@ -2,7 +2,7 @@
 id: 74
 title: Building a Cordova plugin including native code for Windows platform
 date: 2015-03-12T14:49:18+00:00
-author: vjrantal
+author: Ville Rantala
 layout: post
 dsq_thread_id:
   - 3589049274

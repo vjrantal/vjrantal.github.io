@@ -2,7 +2,7 @@
 id: 123
 title: Activating Power BI by using an Azure account
 date: 2016-03-15T12:04:32+00:00
-author: vjrantal
+author: Ville Rantala
 layout: post
 dsq_thread_id:
   - 4664093267

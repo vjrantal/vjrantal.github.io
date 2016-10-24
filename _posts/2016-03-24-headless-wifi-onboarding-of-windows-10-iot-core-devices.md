@@ -2,7 +2,7 @@
 id: 131
 title: Headless Wifi onboarding of Windows 10 IoT Core devices
 date: 2016-03-24T12:20:55+00:00
-author: vjrantal
+author: Ville Rantala
 layout: post
 dsq_thread_id:
   - 4689077789
