@@ -27,7 +27,7 @@ The role of the CI system is to take the latest code from the GitHub project, ru
 
 The bot is a Node.js app, so there are plenty of options to choose from to write unit and functional tests. Since this type of "lower level testing" of Node.js projects is well-documented elsewhere, in this post, I'll focus on a more bot-specific end-to-end testing scenario.
 
-The Microsoft Bot Framework comes with [an emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/). By using the emulator, you can test your bot and have a conversation without going through one of the actual channels (like Skype or Slack). The emulator can run on MacOS using mono and can be installed on the Travis CI worker via brew (see the [before install step](https://github.com/vjrantal/bot-sample/blob/6d973d481fac35e6137dd70e9546d2b1ae0e6911/.travis.yml#L6) for details).
+The Microsoft Bot Framework comes with [an emulator](https://docs.botframework.com/en-us/tools/bot-framework-emulator/). By using the emulator, you can test your bot by having a conversation without going through one of the actual channels (like Skype or Slack). The emulator can run on MacOS using mono and can be installed on the Travis CI worker via brew (see the [before install step](https://github.com/vjrantal/bot-sample/blob/6d973d481fac35e6137dd70e9546d2b1ae0e6911/.travis.yml#L6) for details).
 
 The testing approach is to have a conversation with the bot and verify that it behaves in the expected way. Here is a clip from the test code that gives an idea how a test is written:
 
@@ -48,7 +48,7 @@ To see above code in the full context, have a look at [this file](https://github
 
 # Continuous Delivery
 
-For hosting the Node.js bot app, I chose Azure Functions so that I have to worry as little as possible about the hosting environemnt and can focus only on my app code.
+For hosting the Node.js bot app, I chose Azure Functions so that I have to worry as little as possible about the hosting environment and can focus on my app code.
 
 Azure Functions can be set to automatically listen for commits in a GitHub repository, but in some cases, it is useful to have a more explicit control on what triggers new deployments. For example, you might want to deploy only after certain testing is complete, like in this case, I wanted to deploy after the CI run in master branch is successful.
 
@@ -60,6 +60,6 @@ For the CI to be able to push to the git repository, we need to pass the credent
 ![Get Publish Profile]({{site.baseurl}}/images/get-publish-profile.png)
 
 
-The XML file has the relevant values in attributes named `userName` and `userPWD`. The git clone url is visible in Azure portal in the Overview section (same section from which the screenshot above is taken from). When using the encrypted environment variables in Travis, those credentials can used in a secure way from the deployment scripts (see example [here](https://github.com/vjrantal/bot-sample/blob/master/function-deploy.sh#L11)).
+The XML file has the relevant values in attributes named `userName` and `userPWD`. The git clone url is visible in Azure portal in the overview section (same section from which the screenshot above is taken from). When using the encrypted environment variables in Travis, those credentials can be used in a secure way from the deployment scripts (see example [here](https://github.com/vjrantal/bot-sample/blob/master/function-deploy.sh#L11)).
 
-Due to Azure Functions expecting the individual function apps to be in subfolders of the git repository, I am [using git submodules](https://github.com/vjrantal/bot-sample/blob/master/function-deploy.sh#L11-L17) to create the right structure.
+Due to Azure Functions expecting the individual function apps to be in subfolders of the git repository, I [used git submodules](https://github.com/vjrantal/bot-sample/blob/master/function-deploy.sh#L11-L17) to create the right folder structure.
