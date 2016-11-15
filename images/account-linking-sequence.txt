@@ -1,0 +1,12 @@
+@startuml
+autonumber
+User -> Bot: Initiate Account Linking
+Bot --> User: Return a specific button that triggers the flow
+User -> Facebook: Account Linking Request (including the URL to your Website where the authentication happens)
+Facebook --> User: Show your Website within the Messenger app
+User -> Website: Perform authentication
+Website --> Bot: Redirect to an endpoint handled by the bot
+Bot --> Facebook: Redirect to designated URL after authentication complete
+Facebook -> Bot: Send the Account Linking Webhook Event
+Bot -> User: Bot can inform the user that the linking is complete
+@enduml
