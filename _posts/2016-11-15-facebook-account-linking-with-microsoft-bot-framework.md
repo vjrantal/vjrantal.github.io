@@ -13,9 +13,9 @@ layout: post
 
 # Introduction
 
-In chatbot scenarios, it is often required to perform some sort of user authentication and authorization. For example, the bot might be doing travel reserations on behalf of the user so it needs the proper credentials to do so.
+In chatbot scenarios, it is often required to perform some sort of user authentication and authorization. For example, the bot might be doing travel reservations on behalf of the user so it needs the proper credentials to do so.
 
-The [Microsoft Bot Framework](https://dev.botframework.com/) has some helpers to implement user authentication, for example, the [SigninCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html). There is also example [Node.js code](https://github.com/mattdot/botauth) and [C# code](https://github.com/MicrosoftDX/AuthBot) for authenticating the user. All of the approaches can be leveraged, but are based on "external authentication flow" meaning performing the authentication outside of the chat context (for example, in a Web browser).
+The [Microsoft Bot Framework](https://dev.botframework.com/) has some helpers to implement user authentication, for example, the [SigninCard](https://docs.botframework.com/en-us/node/builder/chat-reference/classes/_botbuilder_d_.signincard.html). There is also example [Node.js code](https://github.com/mattdot/botauth) and [C# code](https://github.com/MicrosoftDX/AuthBot) for authenticating the user. All the approaches work and can be leveraged, but are based on "external authentication flow" meaning performing the authentication outside of the chat context (for example, in a Web browser).
 
 The Facebook Messenger offers a feature where you can perform the user authentication within the Facebook Messenger experience and this is called [Account Linking](https://developers.facebook.com/docs/messenger-platform/account-linking).
 
