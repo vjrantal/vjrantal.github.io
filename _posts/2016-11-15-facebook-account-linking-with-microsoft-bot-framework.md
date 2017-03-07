@@ -44,3 +44,5 @@ In the sample code, the numbered sequences are handled as follows:
 7. We pick up the username in the bot code and [redirect to the URL given by Facebook](https://github.com/vjrantal/account-linking-demo-bot/blob/c2515c0c930aadcb5986b9e7ee4cc0eab4638130/index.js#L32)
 8. The Account Linking Webhook event is handled [here](https://github.com/vjrantal/account-linking-demo-bot/blob/c2515c0c930aadcb5986b9e7ee4cc0eab4638130/index.js#L47-L52)
 9. We [store the username and inform the user](https://github.com/vjrantal/account-linking-demo-bot/blob/c2515c0c930aadcb5986b9e7ee4cc0eab4638130/index.js#L57-L58)
+
+To make Facebook route the Account Linking events handled in step 8., you must subscribe to the `messaging_account_linking` event (instructions [here](https://developers.facebook.com/docs/messenger-platform/webhook-reference#setup)).
