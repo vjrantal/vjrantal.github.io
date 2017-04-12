@@ -19,13 +19,13 @@ In this post, I'll describe an approach to host a Java app as [Service Fabric gu
 
 # Setup, build and deploy
 
-The instructions can be found from the readme at https://github.com/vjrantal/leshan-on-service-fabric.
+The instructions can be found from the readme at [https://github.com/vjrantal/leshan-on-service-fabric](https://github.com/vjrantal/leshan-on-service-fabric).
 
 # Benefits of Service Fabric
 
 For this one, I'll just point to the Azure documentation that explains what Service Fabric provides you:
 
-https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-deploy-existing-app#benefits-of-running-a-guest-executable-in-service-fabric
+[https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-deploy-existing-app](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-deploy-existing-app#benefits-of-running-a-guest-executable-in-service-fabric)
 
 # Java runtime considerations
 
@@ -36,7 +36,7 @@ Because the default machines in the Service Fabric cluster doesn't have Java ins
 
 The challenge with the 1. approach is that the installation is required every time new machines are provisioned in the cluster, for example, when scaling out the cluster. Manual approach isn't good because it would ruin programmatic auto-scaling. So implementing 1. in an automated fashion would require some amount of scripting.
 
-For this demonstration, I chose 2. by using https://github.com/libgdx/packr. There, the idea is that the right version of the Java runtime gets included in the app package that Service Fabric deploys to the machines in the cluster. This increases the app package size, but this should not be a big issue, because copying the app package around the machines in the cluster is relatively fast even if the size is 100+ MB. The benefit is that the app package has a self-contained executable that can be run on vanilla machines.
+For this demonstration, I chose 2. by using [https://github.com/libgdx/packr](https://github.com/libgdx/packr). There, the idea is that the right version of the Java runtime gets included in the app package that Service Fabric deploys to the machines in the cluster. This increases the app package size, but this should not be a big issue, because copying the app package around the machines in the cluster is relatively fast even if the size is 100+ MB. The benefit is that the app package has a self-contained executable that can be run on vanilla machines.
 
 Another alternative would be to use containers. In that approach, you could create a Docker image that contains the right Java runtime and your app and deploy that onto the cluster.
 
