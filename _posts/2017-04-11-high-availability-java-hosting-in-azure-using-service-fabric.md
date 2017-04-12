@@ -29,7 +29,7 @@ For this one, I'll just point to the Azure documentation that explains what Serv
 
 # Java runtime considerations
 
-Because the default machines in the Service Fabric cluster doesn't have Java installed, there needs to be a mechanism to ensure the right version of Java is found when the app is run. Alternatives include:
+Because the default machines in the Service Fabric cluster don't have Java installed, there needs to be a mechanism to ensure the right version of Java is found when the app is run. Alternatives include:
 
 1. Install Java on the machines after they are created
 2. Include Java in the app package
