@@ -5,6 +5,8 @@ author: Ville Rantala
 layout: post
 ---
 
+Update: There is now also information about the Quorum support in the Truffle framework pages at [http://truffleframework.com/tutorials/building-dapps-for-quorum-private-enterprise-blockchains](http://truffleframework.com/tutorials/building-dapps-for-quorum-private-enterprise-blockchains).
+
 # Contents
 {:.no_toc}
 
