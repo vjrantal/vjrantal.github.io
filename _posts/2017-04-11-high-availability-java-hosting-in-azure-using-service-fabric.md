@@ -42,6 +42,8 @@ Another alternative would be to use containers. In that approach, you could crea
 
 # Workaround to allow UDP routing
 
+Update: This workaround should not be needed anymore, because support for UDP endpoints was [added in the 5.7 release](https://github.com/Azure/service-fabric-issues/issues/208#issuecomment-323469390).
+
 Currently, the Service Fabric configuration [doesn't allow defining](https://github.com/Azure/service-fabric-issues/issues/208#issuecomment-289795833) an endpoint as UDP endpoint. For this reason, there needs to be a one-time manual configuration change after deployment of the app to allow UDP load balancing:
 
 ![Allow UDP load balancing]({{site.baseurl}}/images/allow-udp-load-balancing.png)
