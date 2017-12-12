@@ -48,7 +48,7 @@ Would result into a graph like this:
 
 In above, I was using 2KB payload in an Event Hub with 100 partitions and reading the data with 20 EPH instances. Those instances were scheduled by Kubernetes according to the [resource definition](https://github.com/vjrantal/event-hubs-benchmarks/blob/6dae4385c99033e442e781b12af1b19fb8b67b7e/dotnet/deployment.yaml#L17), which effectively meant that two instances fit a single `Standard_D2_v2` virtual machine (since that has 2 vCPUs).
 
-In below table, I collected a summary of the main tests that I run. The header is in format `partitions / EPH instances / payload size`. The result is a peak throughput in MB/s.
+In below table, I collected a summary of the main tests that I run. The header is in format `partitions / EPH instances / payload size`. In all tests, the number of Event Hubs Throughput Units was 100. The result is a peak throughput in MB/s.
 
 
 | Language | 4 / 4 / 2KB | 100 / 20 / 2KB | 2 / 2 / 12B |
