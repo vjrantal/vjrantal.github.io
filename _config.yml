@@ -27,6 +27,9 @@ permalink: /:year/:month/:day/:title/
 twitter_username: vjrantal
 github_username: vjrantal
 
+twitter:
+  username: vjrantal
+
 disqus:
   shortname: vjrantal-blog
 
@@ -38,8 +41,9 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-gems:
+plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
