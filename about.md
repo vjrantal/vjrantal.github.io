@@ -6,5 +6,6 @@ layout: page
 permalink: /about/
 ---
 
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/villerantala" data-format="inline" data-related="false"></script>
+<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="villerantala"><a class="LI-simple-link" href='https://fi.linkedin.com/in/villerantala?trk=profile-badge'>Ville Rantala</a></div>
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
